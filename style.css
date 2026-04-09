@@ -1,35 +1,55 @@
-body{
-    /* You can change the background of the body*/
-    background-image:url("https://codehs.com/uploads/707f69c0b88bf17b30e5ba8a83736d27");
-    color:ivory;
-}
-
-/* Removes all default link styling */
-a:link, a:visited, a:hover, a:active{
-    margin:2em;
-    color:white;
-    font-size:20px;
-}
-
-article{
-    margin:5%;
-    
-    /* Adds a faint gray box behind the article so you can
-     see the text on the background image. If you remove the
-     background image, you may not need this box. */
-    background-color:rgba(128,128,128,0.4);
-}
-
-footer{
-    background-color:darkgray;
-    border: 3px groove  gray;
+h1 {
     text-align:center;
-    color:black;
-    padding:2em;
-    
-    /* Sticks the footer to the bottom of the page*/
-    position: fixed;
-    bottom: 0;
-    width:100%;
-    
+    color:white;
+    font-family:"Gill Sans", sans-serif;
+}
+body {
+    /*background-color:rgb(179, 204, 255);*/
+    background-color:black;
+    color:white;
+}
+img {
+    align: center;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.header {
+    background-color:blue;
+}
+.background {
+    background-color:rgb(172,203,255);
+}
+.now{
+    background-color:pink;
+}
+.future {
+    background-color:rgb(100,242,212);
+    color:blue;
+
+}
+.footer{
+    background-color: pink;
+
+}
+h2 {
+    font-family: Georgia;
+    text-align:center;
+}
+ul {
+  list-style-type: '★';
+}
+li::marker {
+  color: white;
+}
+p {
+    text-size:100px;
+}
+table, th, td {
+  border:1px solid white;
+  text-align:center;
+  font-size:30px;
+  font-family:sans-serif;
 }
