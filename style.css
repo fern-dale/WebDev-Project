@@ -1,55 +1,144 @@
-h1 {
-    text-align:center;
-    color:white;
-    font-family:"Gill Sans", sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
 body {
-    /*background-color:rgb(179, 204, 255);*/
-    background-color:black;
-    color:white;
+    background-color: #fdf6ec;
+    font-family: 'Montserrat', sans-serif;
 }
-img {
-    align: center;
-}
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-.header {
-    background-color:blue;
-}
-.background {
-    background-color:rgb(172,203,255);
-}
-.now{
-    background-color:pink;
-}
-.future {
-    background-color:rgb(100,242,212);
-    color:blue;
 
-}
-.footer{
-    background-color: pink;
-
-}
-h2 {
-    font-family: Georgia;
-    text-align:center;
-}
+/* navigation */
 ul {
-  list-style-type: '★';
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    background-color: rgb(113, 87, 75);
+    font-size: 20px;
+    gap: 50px;
+    padding: 20px 10px;
 }
-li::marker {
-  color: white;
+
+ul a:link, ul a:visited {
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 20px;
 }
-p {
-    text-size:100px;
+
+ul a:hover, ul a:active {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    text-decoration: none;
 }
-table, th, td {
-  border:1px solid white;
-  text-align:center;
-  font-size:30px;
-  font-family:sans-serif;
+
+/* headings */
+h1 {
+    color: rgb(113, 87, 75);
+    text-align: center;
+    font-size: 35px;
+    padding: 40px 0;
+    border-bottom: 2px solid #e8d5c4;
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: rgb(113, 87, 75);
+    text-align: center;
+    font-size: 25px;
+    padding: 20px 0;
+}
+
+/* svg curve text */
+path {
+    fill: transparent;
+}
+
+svg {
+    display: block;
+    margin: 0 auto;
+    width: 400px;
+}
+.moose-logo {
+    text-align=center;
+}
+/* menu page */
+#menubox {
+    background-color: #f5ebe0;
+    border-radius: 15px;
+    padding: 25px;
+    margin: 25px auto;
+    max-width: 600px;
+    text-align: center;
+}
+
+#menubox img {
+    border-radius: 20px;
+    max-width: 100%;
+}
+
+/* misc */
+.blue {
+    color: rgb(113, 87, 75);
+}
+.menu-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px 20px 30px 20px;
+}
+
+.menu-item {
+    background-color: #f5ebe0;
+    border-radius: 15px;
+    padding: 15px;
+    width: 160px;
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+}
+
+.menu-item img {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+    border-radius: 0;
+    margin-bottom: 10px;
+    transition: transform 0.2s ease;
+}
+
+.menu-item:hover img {
+    transform: scale(2.2);
+}
+
+.item-name {
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(80, 55, 45);
+    margin-bottom: 5px;
+}
+
+.item-price {
+    font-size: 16px;
+    color: rgb(113, 87, 75);
+    font-weight: bold;
+}
+
+.category-title {
+    color: rgb(113, 87, 75);
+    font-size: 22px;
+    text-align: center;
+    margin: 30px 0 15px 0;
+}
+/*footer area*/
+
+.center {
+    text-align:center;
+    margin: 30px 40px 25px 10px;
+    font-weight:bold;
+    font-size:12px;
 }
